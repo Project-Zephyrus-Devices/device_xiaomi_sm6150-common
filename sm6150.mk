@@ -274,7 +274,7 @@ PRODUCT_PACKAGES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-evolution
+    $(LOCAL_PATH)/overlay-zep
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
@@ -308,10 +308,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc
-
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
 
 # Sensors
 PRODUCT_COPY_FILES += \
